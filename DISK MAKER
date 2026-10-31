@@ -5,4 +5,4 @@ sudo dd if=/dev/sda bs=4M status=progress | gzip > disk-backup.img.gz
 sudo dd if=/dev/sda1 of=partition1.img bs=4M status=progress
 
 # Clone one disk to another (destination must be ≥ source)
-sudo dd if=/dev/sda of=/dev/sdb bs=4M status=progress conv=noerror,sync
+sudo dd if=/dev/sda of=/dev/sdb bs=4M status=progress conv=noerror,syn
