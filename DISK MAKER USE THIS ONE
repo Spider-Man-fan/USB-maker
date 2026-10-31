@@ -1,0 +1,8 @@
+# Create compressed image of a whole disk
+sudo dd if=/dev/sda bs=4M status=progress | gzip > disk-backup.img.gz
+
+# Create image of one partition
+sudo dd if=/dev/sda1 of=partition1.img bs=4M status=progress
+
+# Clone one disk to another (destination must be ≥ source)
+sudo dd if=/dev/sda of=/dev/sdb bs=4M status=progress conv=noerror,sync
