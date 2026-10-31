@@ -1,1 +1,2 @@
-makeshift(disk)into>usb.exe
+chmod +x usb_bootable_maker.py
+./usb_bootable_maker.py
