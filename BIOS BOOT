@@ -1,0 +1,1 @@
+sudo dd if=your.iso of=/dev/sdX bs=4M status=progress conv=fsync
